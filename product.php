@@ -1,4 +1,4 @@
-<div id="Content-home">
+<div id="Content-product">
     <h1>
         Product
     </h1>

@@ -99,6 +99,20 @@ header .menu{
     color: #fff;
    
 }
+#Content-home{
+    color: sienna;
+}
+#Content-product{
+    color: sienna;
+}
+#Content-blog{
+    color: sienna;
+}
+#Content-contact{
+    color: sienna;
+}
+
+
 @media(max-width:1000px){
     .search-box button{
         position: absolute;

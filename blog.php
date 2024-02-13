@@ -1,4 +1,4 @@
-<div id="Content-home">
+<div id="Content-blog">
     <h1>
         Blog
     </h1>
