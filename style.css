@@ -99,16 +99,16 @@ header .menu{
     color: #fff;
    
 }
-#Content-home{
-    color: sienna;
+#Content-home h1{
+    color: rgb(56, 128, 150);
 }
-#Content-product{
-    color: sienna;
+#Content-product h1{
+    color: rgb(72, 45, 145);
 }
-#Content-blog{
-    color: sienna;
+#Content-blog h1{
+    color: rgb(131, 57, 112);
 }
-#Content-contact{
+#Content-contact h1{
     color: sienna;
 }
 
