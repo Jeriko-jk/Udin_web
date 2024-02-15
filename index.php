@@ -26,7 +26,6 @@
                     <a href="#"><i class="fa-brands fa-facebook"></i></a>
                     <a href="#"><i class="fa-brands fa-twitter"></i></a>
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                      
                 </li>
             </ul>
             <div class="menu">
@@ -37,28 +36,74 @@
     </header>
     <div id="main-content">
     <?php
-    if(!isset($_GET['modul'])){
-     include "home.php";
-    }else{
+    if(isset($_GET['modul'])){
         $pages = $_GET['modul'];
-        if($pages == "home"){
-            include "home.php";
-        }
-        if($pages == "product"){
-            include "product.php";
-        }
-        if($pages == "blog"){
-            include "blog.php";
-        }
-        if($pages == "contact"){
-            include "contact.php";
-        }
-
-
-
-
+    }else{
+        $pages = "home";
     }
+    if(!isset($_GET['modul']) || $pages=="home"){
     ?>
+    <div id="Content-home">
+    <h1>
+        Home
+    </h1>
+    <p>iko tadi malam keparapat bersama hilal<br>
+    iko malming sama adel<br>
+    tadi kami belajar b.inggris<br>
+    tadi aku sarapan lontong sebelum berangkat sekolah<br>
+   </p>
+</div>
+<?php
+    }
+    if($pages == "product"){
+        ?>
+    <div id="Content-product">
+        <h1>
+            Product
+        </h1>
+        <p>iko tadi malam keparapat bersama hilal<br>
+        iko malming sama adel<br>
+        tadi kami belajar b.inggris<br>
+        tadi aku sarapan lontong sebelum berangkat sekolah<br>
+    </p>
+</div>
+<?php
+    }
+    if($pages == "blog"){
+        ?>
+        <div id="Content-blog">
+    <h1>
+        Blog
+    </h1>
+    <p>iko tadi malam keparapat bersama hilal<br>
+    iko malming sama adel<br>
+    tadi kami belajar b.inggris<br>
+    tadi aku sarapan lontong sebelum berangkat sekolah<br>
+   </p>
+</div>
+ <?php
+    }
+    if($pages == "contact"){
+        ?>
+    <div id="Content-contact">
+        <h1>
+            Contact
+        </h1>
+        <p>iko tadi malam keparapat bersama hilal<br>
+        iko malming sama adel<br>
+        tadi kami belajar b.inggris<br>
+        tadi aku sarapan lontong sebelum berangkat sekolah<br>
+    </p>
+
+</div>
+
+<?php    
+}
+?>
+
+
+
+
     </div>
     
 </body>
