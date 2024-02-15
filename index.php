@@ -66,6 +66,11 @@
         tadi kami belajar b.inggris<br>
         tadi aku sarapan lontong sebelum berangkat sekolah<br>
     </p>
+    <ul>
+                <li><a href="index.php?modul=Produk1">Home</a></li>
+                <li><a href="index.php?modul=Produk2">Product</a></li>
+                <li><a href="index.php?modul=Produk3">Blog</a></li>
+    </ul>
 </div>
 <?php
     }
@@ -94,17 +99,56 @@
         tadi kami belajar b.inggris<br>
         tadi aku sarapan lontong sebelum berangkat sekolah<br>
     </p>
+    <a href="index.php?modul=aboutme">tentang saya</a>
 
 </div>
 
 <?php    
 }
-?>
-
-
-
-
+if($pages == "aboutme"){
+    ?>
+    <div id="Content-aboutme">
+        <h1>
+            Hello
+        </h1>
+        <p>Udin
+    </p>
+<?php
+}
+if($pages == "Produk1"){
+    ?>
+    <div id="Content-contact">
+        <h1>
+            Produk Olahraga
+        </h1>
+        <p>Bola
+    </p>
     </div>
-    
+    <?php
+}
+if($pages == "Produk2"){
+    ?>
+    <div id="Content-contact">
+        <h1>
+            Produk Elektronik
+        </h1>
+        <p>Hand Phone
+    </p>
+    </div>
+    <?php
+}
+if($pages == "Produk3"){
+    ?>
+    <div id="Content-contact">
+        <h1>
+            Produk Furniture
+        </h1>
+        <p>Meja
+    </p>
+    </div>
+    <?php
+}
+?>
+</div>
 </body>
 </html>
